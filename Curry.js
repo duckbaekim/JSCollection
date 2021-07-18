@@ -67,3 +67,4 @@ anyFilters(dogs, colorCheck('검정색'),stateCheck('캔자스'));
 
 
 
+
