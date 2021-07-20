@@ -7,4 +7,5 @@ function* getCairoTrilogy(){
 
 //호출 
 const trilogy = getCairoTrilogy();
-console.log(trilogy.next());
+trilogy.next();
+//{value : '궁전 샛길', done: false}
