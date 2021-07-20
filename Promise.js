@@ -1,5 +1,5 @@
 //init
-function getUserPreferences(){
+export function getUserPreferences(){
     const preferences = new Promise((resolve, reject)=>{
         resolve({
             theme: 'dusk',
@@ -31,7 +31,7 @@ failUserPreference().then(preferences=>{
 })
 
 //중첩된 Promise
-function getMusic(theme){
+export function getMusic(theme){
     if(theme==='dusk'){
         return Promise.resolve({
             album:'music for airports',
@@ -39,6 +39,12 @@ function getMusic(theme){
     }
     return Promise.resolve({
         album:'kind of blue',
+    })
+}
+
+export function getAritist(album){
+    return Promise.resolve({
+        artist:'Brian Eno'
     })
 }
 
