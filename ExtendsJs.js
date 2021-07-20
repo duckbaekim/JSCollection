@@ -11,6 +11,7 @@ class FlashCoupon extends Coupon {
     // constructor(...args){
     //     super(args);
     // }
+    
     //method overriding
     get expirationMessage(){
         return `이 쿠폰은 깜짝 쿠폰이며 ${this.expiration} 후에 만료됩니다.`;
